@@ -5,126 +5,222 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ishita Kakkar</title>
-  <meta name="description" content="Ishita Kakkar &mdash; Computer Science PhD Student, University of Wisconsin-Madison">
-
+  <meta name="description" content="Ishita Kakkar — CS PhD Student at UW–Madison researching AI safety and self-improving systems.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body data-theme="light">
+
+  <!-- Top nav -->
+  <nav class="topnav">
+    <a href="index.html" class="topnav-brand">Ishita Kakkar</a>
+    <ul class="topnav-links">
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#research-interests">Research Interests</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#before-phd">Before PhD</a></li>
+      <li><a href="#personal">Personal</a></li>
+    </ul>
+    <button id="theme-btn" class="theme-btn" type="button" aria-label="Toggle dark mode">
+      <!-- moon icon shown in light mode -->
+      <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <!-- sun icon shown in dark mode -->
+      <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+  </nav>
+
   <div class="layout">
 
     <!-- Sidebar -->
     <aside class="sidebar">
       <img class="avatar" src="assets/img/headshot.jpg" alt="Ishita Kakkar">
       <h1>Ishita Kakkar</h1>
-      <p class="role">Computer Science PhD Student</p>
-      <p class="role">University of Wisconsin&ndash;Madison</p>
-      <p class="email">ikakkar [at] wisc [dot] edu</p>
+      <p class="sidebar-meta">
+        Computer Science PhD Student<br>
+        University of Wisconsin&ndash;Madison<br>
+        ikakkar [at] wisc [dot] edu
+      </p>
 
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/ishitakakkar/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/ishitakakkar-10" target="_blank" rel="noopener">GitHub</a>
-        <a href="assets/files/CV-Ishita-Kakkar.pdf" target="_blank" rel="noopener">CV</a>
-        <a href="https://scholar.google.com/citations?user=SPt1Bh8AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-      </div>
-
-      <button id="theme-toggle" class="theme-toggle" type="button">Dark mode</button>
-
-      <nav class="sidebar-nav">
-        <a href="#about-me">About Me</a>
-        <a href="#research-interests">Research Interests</a>
-        <a href="#news">News</a>
-        <a href="#projects">Projects</a>
-        <a href="#personal">Personal</a>
-      </nav>
+      <ul class="social-list">
+        <li>
+          <a href="mailto:ikakkar@wisc.edu" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/ishitakakkar_" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.743l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            X / Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ishitakakkar/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=SPt1Bh8AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            Google Scholar
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ishitakakkar-10" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="blog.html" aria-label="Blog">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="assets/files/CV-Ishita-Kakkar.pdf" target="_blank" rel="noopener" aria-label="CV">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            CV
+          </a>
+        </li>
+      </ul>
     </aside>
 
-    <!-- Main content -->
+    <!-- Main -->
     <main>
 
       <!-- About Me -->
       <section id="about-me">
         <h2 class="section-title">About Me</h2>
-        <p class="lead">
-          I am a first year Computer Science PhD student at the University of Wisconsin-Madison, advised by Prof. <a target="_blank" href="https://junjiehu.github.io/">Junjie Hu</a>. I am investigating safety alignment in large reasoning models through mechanistic interpretability to explain and mitigate jailbroken behaviors. I am fortunate to be supported by the <a target="_blank" href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program"><strong>NSF Graduate Research Fellowship (GRFP)</strong></a>. I previously obtained my Bachelor's in Computer Science from <a target="_blank" href="https://www.umass.edu/">the University of Massachusetts Amherst</a> (UMass Amherst).
-          I am passionate about creating <strong>transparent, interpretable, trustworthy</strong> natural language processing (NLP) and machine learning (ML) systems for societal good.
-          <br><br>
-          Specifically, my research interests lie at the intersection of NLP and <a target="_blank" href="https://groups.cs.umass.edu/pit/">Public Interest Technology (PIT)</a>. For the former, I have conducted research under the supervision of <a target="_blank" href="https://research.ibm.com/people/mikhail-yurochkin">Mikhail Yurochkin</a> at <a target="_blank" href="https://mitibmwatsonailab.mit.edu/">MIT-IBM Watson AI Lab</a>, <a target="_blank" href="https://www.khoury.northeastern.edu/people/mai-elsherief/">Prof. Mai ElSherief</a> at <a target="_blank" href="https://www.northeastern.edu/">Northeastern University</a> (NEU) and <a target="_blank" href="https://www.cics.umass.edu/about/directory/hong-yu">Prof. Hong Yu</a> at UMass Amherst <a target="_blank" href="https://bio-nlp.org/">BioNLP Lab</a>. For the latter, I was a 2024 Public Interest Technology New England (PIT-NE) <a target="_blank" href="https://pitne.org/impact-tech-fellowship-2024/">Impact Technology Fellow</a> and <a target="_blank" href="https://techfc.org/student-clubs/">Student Leader</a> at the Public Interest Technology - University Network (PIT-UN). I'm currently doing my undergraduate thesis in causal inference under <a target="_blank" href="https://www.cics.umass.edu/about/directory/david-jensen">Prof. David Jensen</a> to advance my understanding of explainable AI and interpretability.
-          <br><br>
-          I am also honored to be a <a target="_blank" href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/">Break Through Tech AI/ML Fellow</a> at <a target="_blank" href="https://www.mit.edu/">MIT</a>, an <a target="_blank" href="https://sites.google.com/view/ideas-summer-program/">IDEAS (Intelligence, Data, Ethics And Society) Fellow</a> at NEU, and an <a target="_blank" href="https://aws.amazon.com/machine-learning/scholarship/">Amazon Web Services AI/ML Fellow</a>.
+        <p>
+          I am a first-year Computer Science PhD student at the University of Wisconsin-Madison,
+          advised by <a href="https://junjiehu.github.io/" target="_blank" rel="noopener">Prof. Junjie Hu</a>,
+          and I'm fortunate to be supported by the
+          <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" target="_blank" rel="noopener"><strong>NSF Graduate Research Fellowship (GRFP)</strong></a>.
+          I previously earned my bachelor's degree in Computer Science from the
+          <a href="https://www.umass.edu/" target="_blank" rel="noopener">University of Massachusetts Amherst</a>.
         </p>
       </section>
 
       <!-- Research Interests -->
       <section id="research-interests">
         <h2 class="section-title">Research Interests</h2>
-        <p class="placeholder-note">Template only &mdash; replace these cards with your updated research interests.</p>
-        <div class="card-grid">
-          <div class="card">
-            <h3>Research interest #1</h3>
-            <p>Short description of this research interest goes here. Replace with your own text.</p>
+        <p>
+          My research seeks to understand model reasoning as an emergent capability across diverse settings,
+          evaluate whether it is faithful, trustworthy, and safe, and harness it to build AI systems
+          that can improve themselves. I approach these questions through:
+        </p>
+        <div class="ri-grid">
+          <div class="ri-card">
+            <h3>AI Safety</h3>
+            <p class="tagline">Understanding and mitigating harmful behaviors in reasoning models</p>
+            <ul>
+              <li>Mechanistic interpretability</li>
+              <li>Chain-of-thought faithfulness &amp; monitorability</li>
+              <li>Jailbreak analysis &amp; robustness</li>
+              <li>LLM-as-judge evaluation &amp; reliability</li>
+            </ul>
           </div>
-          <div class="card">
-            <h3>Research interest #2</h3>
-            <p>Short description of this research interest goes here. Replace with your own text.</p>
+          <div class="ri-card">
+            <h3>Self-improving Agentic Systems</h3>
+            <p class="tagline">The development of agentic systems that improve their own reasoning in open-ended settings</p>
+            <ul>
+              <li>Open-ended &amp; evolutionary search (e.g., DGM / AlphaEvolve-style methods)</li>
+              <li>Self-evolving systems &amp; recursive self-improvement</li>
+              <li>Evaluator design &amp; reward modeling</li>
+              <li>Test-time adaptation &amp; inference-time scaling</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <!-- News -->
-      <section id="news">
-        <h2 class="section-title">News</h2>
-        <p class="placeholder-note">Template only &mdash; replace these entries with your updated news items, most recent first.</p>
-        <ul class="news-list">
-          <li><span class="news-date">[Mon Year]</span><span>News item placeholder &mdash; replace with your update.</span></li>
-          <li><span class="news-date">[Mon Year]</span><span>News item placeholder &mdash; replace with your update.</span></li>
-          <li><span class="news-date">[Mon Year]</span><span>News item placeholder &mdash; replace with your update.</span></li>
+      <!-- Publications -->
+      <section id="publications">
+        <h2 class="section-title">Publications</h2>
+        <div class="pub-list">
+
+          <div class="pub-row">
+            <div class="pub-badge-col">
+              <span class="pub-badge">COLM<br>2026</span>
+            </div>
+            <div>
+              <p class="pub-title">
+                <a href="https://arxiv.org/abs/2604.19001" target="_blank" rel="noopener">
+                  When Safety Fails Before the Answer: Benchmarking Harmful Behavior Detection in Reasoning Chains
+                </a>
+              </p>
+              <p class="pub-authors"><strong>Ishita Kakkar</strong>, Enze Zhang, Rheeya Uppaal, Junjie Hu</p>
+              <p class="pub-tldr">
+                We introduce a step-level taxonomy and an annotated dataset HarmThoughts, that traces how harm emerges and propagates through a model's reasoning.
+              </p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/abs/2604.19001" target="_blank" rel="noopener" class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Paper
+                </a>
+                <a href="https://huggingface.co/datasets/ishitakakkar-10/HarmThoughts" target="_blank" rel="noopener" class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  HuggingFace Dataset
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-row">
+            <div class="pub-badge-col">
+              <span class="pub-badge">ICWSM<br>2026</span>
+            </div>
+            <div>
+              <p class="pub-title">
+                <a href="https://ojs.aaai.org/index.php/ICWSM/article/view/42743" target="_blank" rel="noopener">
+                  Fluent but Unfeeling: The Emotional Blind Spots of Language Models
+                </a>
+              </p>
+              <p class="pub-authors">Bangzhao Shu, Isha Joshi, Melissa Karnaze, Anh C Pham, <strong>Ishita Kakkar</strong>, Sindhu Kothe, Arpine Hovasapian, Mai ElSherief</p>
+              <p class="pub-tldr">
+                We introduce EXPRESS, a benchmark of 251 fine-grained, self-disclosed emotion labels from Reddit, and show that even strong LLMs struggle to match how people actually describe their own emotions.
+              </p>
+              <div class="pub-links">
+                <a href="https://ojs.aaai.org/index.php/ICWSM/article/view/42743" target="_blank" rel="noopener" class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Paper
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Before PhD -->
+      <section id="before-phd">
+        <h2 class="section-title">Before my PhD</h2>
+        <p>My undergraduate research experiences introduced me to NLP, AI safety, interpretability, and public-interest technology:</p>
+        <ul class="phd-list">
+          <li>Research at the <a href="https://mitibmwatsonailab.mit.edu/" target="_blank" rel="noopener">MIT-IBM Watson AI Lab</a>, <a href="https://sites.google.com/ucsd.edu/ersp/about/2023-ersp-national-conference-virtual" target="_blank" rel="noopener">UC San Diego</a>, <a href="https://www.northeastern.edu/" target="_blank" rel="noopener">Northeastern University</a></li>
+          <li><a href="https://sites.google.com/umass.edu/ersp-cics" target="_blank" rel="noopener">Early Research Scholars Program</a> Fellow at UMass Amherst</li>
+          <li>Undergraduate thesis in causal inference with <a href="https://www.cics.umass.edu/about/directory/david-jensen" target="_blank" rel="noopener">Prof. David Jensen</a></li>
+          <li><a href="https://techfc.org/student-clubs/" target="_blank" rel="noopener">Public Interest Technology-University Network</a> Student Leader</li>
+          <li><a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/" target="_blank" rel="noopener">Break Through Tech AI/ML Fellow</a> at MIT</li>
+          <li><a href="https://sites.google.com/view/ideas-summer-program/" target="_blank" rel="noopener">IDEAS Fellow</a> at Northeastern University</li>
+          <li><a href="https://aws.amazon.com/machine-learning/scholarship/" target="_blank" rel="noopener">Amazon Web Services AI/ML Fellow</a></li>
+          <li>UMass Amherst Outstanding Undergraduate Achievement Award for Research Excellence</li>
         </ul>
-      </section>
-
-      <!-- Projects -->
-      <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <p class="placeholder-note">Template only &mdash; replace these entries with your updated projects/publications.</p>
-
-        <div class="project">
-          <img src="https://placehold.co/130x130?text=Image" alt="">
-          <div>
-            <p class="title"><a href="#">Project title placeholder</a></p>
-            <p class="authors">Author list placeholder<sup>1</sup>, Co-author<sup>2</sup><br>
-              <sup>1</sup>Affiliation, <sup>2</sup>Affiliation</p>
-            <p class="desc">One-line project description placeholder.</p>
-            <a href="#" class="btn">View Publication</a>
-          </div>
-        </div>
-
-        <div class="project">
-          <img src="https://placehold.co/130x130?text=Image" alt="">
-          <div>
-            <p class="title"><a href="#">Project title placeholder</a></p>
-            <p class="authors">Author list placeholder<sup>1</sup>, Co-author<sup>2</sup><br>
-              <sup>1</sup>Affiliation, <sup>2</sup>Affiliation</p>
-            <p class="desc">One-line project description placeholder.</p>
-            <a href="#" class="btn">View Publication</a>
-          </div>
-        </div>
       </section>
 
       <!-- Personal -->
       <section id="personal">
         <h2 class="section-title">Personal</h2>
-        <p class="lead">
-          I love graphic design and calligraphy! Check out my work <a target="_blank" href="https://www.instagram.com/brushographyy/">here</a>. I also co-managed a fully student-run on-campus printing and design business, <a target="_blank" href="https://www.instagram.com/cdandc/">Campus Design &amp; Copy</a>, for 1 year!
+        <p>
+          I love graphic design and calligraphy! Check out my work <a href="https://www.instagram.com/brushographyy/" target="_blank" rel="noopener">here</a>. I also co-managed a fully student-run on-campus printing and design business, <a href="https://www.instagram.com/cdandc/" target="_blank" rel="noopener">Campus Design &amp; Copy</a>, for 1 year!
         </p>
       </section>
 
-      <footer>
-        &copy; <span id="year"></span> Ishita Kakkar
-      </footer>
+      <footer>&copy; <span id="year"></span> Ishita Kakkar</footer>
     </main>
   </div>
 

@@ -1,40 +1,46 @@
 (function () {
   var root = document.documentElement;
-  var toggle = document.getElementById("theme-toggle");
+  var btn = document.getElementById("theme-btn");
+  var moonIcon = document.getElementById("icon-moon");
+  var sunIcon = document.getElementById("icon-sun");
+
   var stored = localStorage.getItem("theme");
   var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   var theme = stored || (prefersDark ? "dark" : "light");
-
   applyTheme(theme);
 
-  toggle.addEventListener("click", function () {
-    theme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    applyTheme(theme);
-    localStorage.setItem("theme", theme);
-  });
+  if (btn) {
+    btn.addEventListener("click", function () {
+      theme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      applyTheme(theme);
+      localStorage.setItem("theme", theme);
+    });
+  }
 
   function applyTheme(t) {
     root.setAttribute("data-theme", t);
-    toggle.textContent = t === "dark" ? "Light mode" : "Dark mode";
+    if (moonIcon && sunIcon) {
+      moonIcon.style.display = t === "dark" ? "none" : "block";
+      sunIcon.style.display = t === "dark" ? "block" : "none";
+    }
   }
 
-  // Scroll-spy nav highlighting
+  // Scroll-spy: highlight active top-nav link
   var sections = document.querySelectorAll("main section[id]");
-  var navLinks = document.querySelectorAll(".sidebar-nav a");
+  var navLinks = document.querySelectorAll(".topnav-links a");
 
-  var observer = new IntersectionObserver(
-    function (entries) {
+  if (sections.length && navLinks.length) {
+    var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        var link = document.querySelector('.sidebar-nav a[href="#' + entry.target.id + '"]');
+        var link = document.querySelector('.topnav-links a[href="#' + entry.target.id + '"]');
         if (!link) return;
         if (entry.isIntersecting) {
           navLinks.forEach(function (l) { l.classList.remove("active"); });
           link.classList.add("active");
         }
       });
-    },
-    { rootMargin: "-40% 0px -50% 0px" }
-  );
+    }, { rootMargin: "-40% 0px -50% 0px" });
 
-  sections.forEach(function (s) { observer.observe(s); });
+    sections.forEach(function (s) { observer.observe(s); });
+  }
 })();
