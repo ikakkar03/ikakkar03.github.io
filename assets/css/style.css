@@ -188,35 +188,34 @@ section { margin-bottom: 56px; scroll-margin-top: 68px; }
 }
 
 .ri-card {
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border: 1.5px solid var(--accent-border);
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: var(--card-shadow);
+  padding: 22px;
 }
 
 .ri-card h3 {
   font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 4px;
+  margin: 0 0 5px;
+  color: var(--accent);
 }
 
 .ri-card .tagline {
   font-size: 0.82rem;
   color: var(--text-muted);
-  font-style: italic;
-  margin: 0 0 12px;
+  margin: 0 0 14px;
+  line-height: 1.5;
 }
 
 .ri-card ul {
   margin: 0;
   padding-left: 18px;
   font-size: 0.88rem;
-  color: var(--text-muted);
+  color: var(--text);
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
 }
 
 /* ====== Publications ====== */
