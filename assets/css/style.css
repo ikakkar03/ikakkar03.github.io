@@ -118,13 +118,15 @@ a:hover { text-decoration: underline; }
 }
 
 .sidebar .avatar {
-  width: 200px;
-  height: 240px;
-  border-radius: 10px;
+  width: 215px;
+  height: 275px;
+  border-radius: 8px;
   object-fit: cover;
   object-position: center top;
   box-shadow: var(--card-shadow);
   border: 1px solid var(--border);
+  display: block;
+  margin: 0 auto;
 }
 
 .sidebar h1 {
