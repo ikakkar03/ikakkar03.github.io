@@ -167,6 +167,16 @@ a:hover { text-decoration: underline; }
 .social-list a:hover { color: var(--accent); text-decoration: none; }
 .social-list svg { flex-shrink: 0; }
 
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  padding: 4px 0;
+  cursor: default;
+}
+
 /* ====== Main content ====== */
 main { min-width: 0; }
 
